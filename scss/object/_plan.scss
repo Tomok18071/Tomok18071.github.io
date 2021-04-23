@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+#plan {
+  .rec-slick {
+    display: flex;
+    margin-bottom: 94px;
+
+    // justify-content: space-between;
+    // align-items: center;
+    .rec-slick-item {
+      overflow: scroll;
+      padding-right: 30px;
+      padding-left: 30px;
+      @include overTab {
+        padding-right: 30px;
+        padding-left: 30px;
+
+      }
+
+      // width: 322px;
+      .image {
+
+        // width: 100%;
+        .slick-img {
+          width: 100%;
+        }
+      }
+
+      .slick-txt {
+        background-color: cl(white);
+        padding: 20px 25px 40px 25px;
+        border-radius: 0 0 8px 8px;
+
+        .slick-txt-top {
+          font-size: 16px;
+          margin-bottom: 50px;
+        }
+
+        .slick-txt-bottom {
+          font-size: 14px;
+
+          span {
+            color: cl(red);
+          }
+        }
+      }
+    }
+  }  
+
+  .service {
+    padding: 0 20px;
+
+    @include overTab {
+      padding: 0 40px;
+    }
+
+    .service-wrap {
+      .service-list {
+        
+
+        @include overTab {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .service-item {
+          background: cl(lightgrey);
+          margin-top: 30px;
+          @include overTab {
+            width: calc(100% / 3);
+            height: 450px;
+            &:not(:last-of-type) {
+              margin-right: 30px;
+            }
+
+          }
+        }
+
+        .service-image {
+          width: 160px;
+          height: 160px;
+          margin: 0 auto;
+        }
+
+        .service-txt {
+          padding: 0 20px 30px 20px;
+
+          .service-txt-top {
+            margin-top: 8px;
+            text-align: center;
+            font-size: 28px;
+            padding-bottom: 30px;
+            width: 100%;
+            // font-weight: bold;
+          }
+
+          .service-txt-desc {
+            text-align: left;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+#blog {
+  .blog-wrap {
+    margin-bottom: 70px;
+    padding: 0 25px;
+    @include overTab {
+      padding: 0 100px;
+    }
+    .row {
+      display: flex;
+      // justify-content: center;
+      // align-items: center;
+      &:not(:last-of-type) {
+        margin-bottom: 30px;
+      }
+      dt {
+        font-size: 14px;
+        color: cl(white);
+        background-color: cl(primary);
+        margin-right: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 92px;
+        // height: 32px;
+        height: 32px;
+        @include overTab {
+          width: 157px;
+
+        }
+      }
+      dd {
+        font-size: 18px;
+        flex: 1;
+        @include overTab {
+          font-size: 24px;
+        }
+      }
+      a {
+        color: cl(white);
+        text-decoration: underline;
+        @include overTab {
+          display: block;
+          color: cl(white);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+#faq {  
+  .faq-wrap {
+    // padding-bottom: 70px;
+    padding: 0 20px 70px 20px;
+    max-width: 900px; 
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    @include overTab {
+      padding-bottom: 70px;
+      padding: 0 10px;
+      max-width: 900px; 
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      padding: 0 20px 70px;
+
+    }
+    .title {
+      color: cl(text);
+      background: cl(white);
+      display: block;
+      cursor: pointer;
+      border-bottom: 1px solid #E5E5E5;
+      text-align: left;
+      padding: 14px;
+      @include overTab {
+        padding: 22px 50px;
+        text-align: center;
+      }
+    }
+    .detail {
+      color: cl(text);
+      background: cl(lightgrey);
+      padding: 14px;
+      // text-align: center;
+      text-align: left;
+      display: none;
+      @include overTab {
+        padding: 22px 50px;
+        text-align: center;
+      }
+      &:nth-of-type(2) {
+        border-bottom: 1px solid #E5E5E5;
+        text-align: left;
+        @include overTab {
+          text-align: center;
+        }
+      }
+      // &.active {
+      //   display: block;
+      // }
+    }
+  }
+}

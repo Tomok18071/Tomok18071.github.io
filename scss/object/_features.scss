@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+.features-item {
+  display: block;
+  &:nth-child(even) {
+    flex-flow: row-reverse;
+  }
+  @include overTab {
+    display: flex;
+    justify-content: space-between;
+  }
+  .features-item-image {
+    width: 100%;
+    @include overTab {
+      width: 50%;   
+    }
+  }
+  .features-item-txt {
+    padding: 45px;
+    @include overTab {
+      flex: 1;
+      padding: 30px;
+    }
+    .features-txt-top {
+      color: cl(baige);
+      font-size: 28px;
+      margin-bottom: 50px;
+    }
+    .features-txt-bottom {
+      color: cl(white);
+      font-size: 18px;
+    }
+  }
+  .features-item-link {
+    margin-top: 45px;
+  }
+}

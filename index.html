@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <!-- reset.css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!--cdn/aos.css読み込み-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <!-- luminous/ライトボックスのcssパス記述 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.3/luminous-basic.min.css"
+    />
+    <!-- slick.cssを2種類読み込む -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    />
+    <title>My Portfolio-極楽亭</title>
+    <!-- サイトタイトル記述 -->
+    <meta
+      name="description"
+      content="My Portfolio-極楽亭/架空の温泉地のサイトを作成してみました"
+    />
+    <!-- 自作CSS記述 -->
+    <link rel="stylesheet" href="scss/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-image">
+        <img src="image/logo.png" alt="極楽亭のロゴ画像" class="header-img" />
+      </div>
+      <div class="header-nav">
+        <nav class="nav">
+          <ul class="header-list">
+            <li class="header-item"><a href="">宿泊予約</a></li>
+            <li class="header-item"><a href="">観光情報</a></li>
+            <li class="header-item"><a href="">よくあるご質問</a></li>
+            <li class="header-item"><a href="">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- 3本線/headerの中に記述 -->
+      <button class="menu-trigger" type="button" aria-label="メニュー">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+
+    <!-- ハンバーガーメニュー/headerの外に記述 -->
+    <nav class="gloval-nav">
+      <ul class="gloval-list">
+        <li class="gloval-item"><a href="">宿泊予約</a></li>
+        <li class="gloval-item"><a href="">レストラン予約</a></li>
+        <li class="gloval-item"><a href="">観光情報</a></li>
+        <li class="gloval-item"><a href="">アクセス</a></li>
+        <li class="gloval-item"><a href="">よくあるご質問</a></li>
+        <li class="gloval-item"><a href="">100%</a></li>
+      </ul>
+    </nav>
+
+    <!-- main/top -->
+    <main>
+      <div class="top">
+        <div class="top-wrap">
+          <h2 class="top-ttl">祇園の中心に佇む<br />京の極楽浄土</h2>
+        </div>
+      </div>
+
+      <!-- features -->
+      <section id="features" class="cmn-section black">
+        <div class="inner">
+          <div class="cmn-txt">
+            <p class="cmn-ttl">本館の特徴</p>
+            <p class="cmn-summary">features</p>
+          </div>
+          <div class="fetures-list-wrap">
+            <ul class="features-list">
+              <li class="features-item">
+                <div class="features-item-image" data-aos="fade">
+                  <img
+                    src="image/feature-item01.png"
+                    alt=""
+                    class="features-item-img"
+                  />
+                </div>
+                <div class="features-item-txt" data-aos="fade" data-aos-delay="400"
+                >
+                  <div class="features-txt-top">
+                    京都文化の粋と<br />英国文化の伝統が調和したホテル。
+                  </div>
+                  <div class="features-txt-bottom">
+                    イングランド北方のスコットランドのアーツ＆クラフトと古都エジン
+                    バラをテーマにデザインされています。京都とエジンバラは姉妹都市
+                    であるばかりでなく古い街並や伝統的な生活、文化などヨーロッパと
+                    アジアの美しい古都として非常に似ています。デザインは共通の工芸
+                    に関わる文化をテーマに構成しています。
+                  </div>
+                  <div class="features-item-btn cmn-btn">
+                    <a href="" class="features-item-link cmn-link"
+                      >コース料理の詳細</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="features-item">
+                <div class="features-item-image" data-aos="fade">
+                  <img
+                    src="image/feature-item02.png"
+                    alt=""
+                    class="features-item-img"
+                  />
+                </div>
+                <div class="features-item-txt" data-aos="fade" data-aos-delay="400"
+>
+                  <div class="features-txt-top">
+                    京都ならではの季節の味覚をみなさまに。<br />丁寧に作りあげた逸品に舌鼓。
+                  </div>
+                  <div class="features-txt-bottom">
+                    京都の街並みを思わせるような日本料理「風風堂」、英国の伝統ある
+                    邸宅の書斎がモチーフとしたカフェ「ライブラリー」。極楽亭で過ご
+                    す時間をもっとラグジュアリーなひとときに。京都ならではの食材を
+                    使った料理は、今この時しか味わえない逸品。昼下がりにカフェでの
+                    んびりと読書してみるのもおすすめ。
+                  </div>
+                  <div class="features-item-btn cmn-btn">
+                    <a href="" class="features-item-link cmn-link"
+                      >コース料理の詳細</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="features-item">
+                <div class="features-item-image" data-aos="fade">
+                  <img
+                    src="image/feature-item03.png"
+                    alt=""
+                    class="features-item-img"
+                  />
+                </div>
+                <div class="features-item-txt" data-aos="fade" data-aos-delay="400"
+>
+                  <div class="features-txt-top">
+                    五感を癒す。<br />天然温泉から美と活力を。
+                  </div>
+                  <div class="features-txt-bottom">
+                    京の極楽の最上階にある「スパ・ゴクラク」。湧き上がる天然温泉の
+                    恵みで細胞内のバランスを整え新陳代謝を向上させてくれます。大い
+                    なる自然を感じながらリラックスすれば、身体の奥から元気が蘇って
+                    くるでしょう。京都らしい和のテイストを取り入れた五感を癒すペン
+                    トハウススパ。心と体のリフレッシュに最適です。
+                  </div>
+                  <div class="features-item-btn cmn-btn">
+                    <a href="" class="features-item-link cmn-link"
+                      >コース料理の詳細</a
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- recommend-plan/おすすめプラン -->
+      <section id="plan" class="cmn-section black">
+        <div class="inner">
+          <div class="cmn-txt">
+            <h3 class="cmn-ttl">おすすめプラン</h3>
+            <p class="cmn-summary">Recommend Plan</p>
+          </div>
+          <div id="slider" class="rec-slick" data-aos="fade" data-aos-anchor-placement="center-bottom">
+            <div class="rec-slick-item">
+              <div class="image">
+                <img src="image/rec-plan01.png" alt="" class="slick-img" />
+              </div>
+              <div class="slick-txt">
+                <p class="slick-txt-top">
+                  温泉で湯ったりポカポカプラン＜朝食選択可＞
+                </p>
+                <p class="slick-txt-bottom">お値段：<span>6000円</span> / 人</p>
+              </div>
+            </div>
+            <div class="rec-slick-item">
+              <div class="image">
+                <img src="image/rec-plan02.png" alt="" class="slick-img" />
+              </div>
+              <div class="slick-txt">
+                <p class="slick-txt-top">
+                  【ケーキセット】選べるケーキお飲物 のセット！
+                </p>
+                <p class="slick-txt-bottom">お値段：<span>2000円</span> / 人</p>
+              </div>
+            </div>
+            <div class="rec-slick-item">
+              <div class="image">
+                <img src="image/rec-plan03.png" alt="" class="slick-img" />
+              </div>
+              <div class="slick-txt">
+                <p class="slick-txt-top">
+                  バータイム「2DRINKSプラン」選べる
+                  ドリンク2杯におつまみが付いたプラン
+                </p>
+                <p class="slick-txt-bottom">お値段：<span>5000円</span> / 人</p>
+              </div>
+            </div>
+            <div class="rec-slick-item">
+              <div class="image">
+                <img src="image/rec-plan04.png" alt="" class="slick-img" />
+              </div>
+              <div class="slick-txt">
+                <p class="slick-txt-top">
+                  【リモート宴会プラン】京の極楽から
+                  シェフ厳選メニューをご提供！
+                </p>
+                <p class="slick-txt-bottom">お値段：<span>7000円</span> / 人</p>
+              </div>
+            </div>
+            <div class="rec-slick-item">
+              <div class="image">
+                <img src="image/rec-plan05.png" alt="" class="slick-img" />
+              </div>
+              <div class="slick-txt">
+                <p class="slick-txt-top">
+                  【数量限定】季節の会席とミニボトル のドリンク付きプラン
+                </p>
+                <p class="slick-txt-bottom">お値段：<span>8000円</span> / 人</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- service -->
+          <div class="service">
+            <div class="service-wrap">
+              <ul class="service-list">
+                <li class="service-item" data-aos="fade-up" data-aos-delay="400"
+>
+                  <div class="service-image">
+                    <img
+                      src="image/service-item01.png"
+                      alt=""
+                      class="service-img"
+                    />
+                  </div>
+                  <div class="service-txt">
+                    <div class="service-txt-top">最低価格保証</div>
+                    <div class="service-txt-desc">
+                      極楽亭の公式ホームページでのご宿泊料金
+                      は、どの予約サイトよりも最低価格である
+                      ことをお約束いたします。
+                    </div>
+                  </div>
+                </li>
+                <li class="service-item" data-aos="fade-up" data-aos-delay="800"
+>
+                  <div class="service-image">
+                    <img
+                      src="image/service-item02.png"
+                      alt=""
+                      class="service-img"
+                    />
+                  </div>
+                  <div class="service-txt">
+                    <div class="service-txt-top">全客室Wi-Fi無料</div>
+                    <div class="service-txt-desc">
+                      ロビー・客室フロアに無線LANアクセスポイントを設置し、各客室内でもWi-Fi接続によるインターネットを利用できる環境を構築しています。
+                    </div>
+                  </div>
+                </li>
+                <li class="service-item" data-aos="fade-up" data-aos-delay="1000"
+>
+                  <div class="service-image">
+                    <img
+                      src="image/service-item03.png"
+                      alt=""
+                      class="service-img"
+                    />
+                  </div>
+                  <div class="service-txt">
+                    <div class="service-txt-top">会員限定料金</div>
+                    <div class="service-txt-desc">
+                      会員の方は、会員料金でご宿泊いただけるほか、オンラインクーポンなどの限定メニューもご利用いただけます。
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- blog/ブログ -->
+      <section id="blog" class="cmn-section black">
+        <div class="inner">
+          <div class="cmn-txt">
+            <h3 class="cmn-ttl">ブログ</h3>
+            <p class="cmn-summary">Blog</p>
+          </div>
+          <div class="blog-wrap" data-aos="fade" data-aos-delay="1000"
+          >
+            <dl>
+              <div class="row">
+                <dt>お知らせ</dt>
+                <dd>
+                  <a href="javascript:void(0)"
+                    >2021年4月より、極楽亭の別館が開館します！こちらも予約を随時、受付けております。</a
+                  >
+                </dd>
+              </div>
+              <div class="row">
+                <dt>お知らせ</dt>
+                <dd>
+                  <a href="javascript:void(0)"
+                    >2021年5月より、極楽亭に新たに宴会場「風の間」が新設されました。</a
+                  >
+                </dd>
+              </div>
+              <div class="row">
+                <dt>採用</dt>
+                <dd>
+                  <a href="javascript:void(0)"
+                    >2021年度の採用募集を開始いたしました。一緒に極楽亭を盛り上げていきませんか？</a
+                  >
+                </dd>
+              </div>
+              <div class="row">
+                <dt>お知らせ</dt>
+                <dd>
+                  <a href="javascript:void(0)"
+                    >2021年2月20日、極楽亭の創業50年を迎えました。</a
+                  >
+                </dd>
+              </div>
+              <div class="row">
+                <dt>お知らせ</dt>
+                <dd>
+                  <a href="javascript:void(0)"
+                    >極楽亭が京都の『BEST OF 京旅館2020』に選出されました。</a
+                  >
+                </dd>
+              </div>
+            </dl>
+          </div>
+          <div class="blog-btn cmn-btn">
+            <a href="" class="blog-link cmn-link">もっと見る</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- faq/良くある質問 -->
+      <section id="faq" class="cmn-section black">
+        <div class="inner">
+          <div class="cmn-txt">
+            <h3 class="cmn-ttl">よくある質問</h3>
+            <p class="cmn-summary">FAQ</p>
+          </div>
+          <div class="faq-wrap" data-aos="fade" data-aos-delay="1000">
+            <dl>
+              <dt class="title js-accordion">
+                Q. チェックイン、チェクアウトの時間は何時ですか？
+              </dt>
+              <dd class="detail">
+                A.
+                チェックインの時間は15:00～17:00です。もし17:00を過ぎるようでしたら、ご一報を入れていただくよう
+                お願いしております。チェックアウトの時間は翌朝10:00でございます。
+              </dd>
+              <dt class="title js-accordion">Q. 露天風呂がついたお部屋はありますか？</dt>
+              <dd class="detail">
+                A. 露天風呂付のお部屋は全部で24室ございます。
+              </dd>
+              <dt class="title js-accordion">
+                Q. ペットを連れて行きたいのですが可能ですか？
+              </dt>
+              <dd class="detail">
+                A.
+                ペット同伴のご宿泊はお断りさせて頂いております。お車で5分ほどの場所に、一時預かりを行っているペット
+                ハウスがございますのでそちらのご利用をお願い致します。
+              </dd>
+              <dt class="title js-accordion">
+                Q. キャスター付きのバッグで行っても大丈夫ですか？
+              </dt>
+              <dd class="detail">
+                A.
+                全館畳敷きの為、キャスター付きバッグのご利用をご遠慮頂いております。お荷物は、係りの者がお部屋までお
+                持ち致しますのでご協力をお願い致します。
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- footer -->
+    <section id="footer">
+      <div class="inner" data-aos="fade" data-aos-anchor-placement="top">
+        <div class="footer-nav-wrap">
+          <nav class="footer-nav">
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item">
+                <a href="" class="footer-nav-link">利用規約</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="" class="footer-nav-link">プライバシーポリシー</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="" class="footer-nav-link">個人商取引法に基づく表記</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="" class="footer-nav-link">お問い合わせ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-image">
+          <img src="image/logo.png" alt="" class="footer-logo" />
+        </div>
+        <div class="copyright" data-aos="fade" data-aos-delay="1200" data-aos-anchor-placement="top"
+>
+          Copyright (c) 2021 極楽亭 All Rights Reserved.
+        </div>
+      </div>
+    </section>
+
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- jQueryフォルダのdist/aos.js読み込み -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- jQueryフォルダslick.min.jsの読み込み -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    ></script>
+
+    <!-- luminous/ライトボックスのjsパス記述 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.3/Luminous.min.js"></script>
+
+    <!-- 自作jsファイルの読み込み -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+// top
+.top {
+  background-image: url(/image/top-mv_sp.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  padding-top: 94px;
+  position: relative;
+  @include overTab {
+    background-image: url(/image/top-bg.jpg);
+  }
+  .top-wrap {
+    .top-ttl {
+      position: absolute;
+      width: 100%;/* レスポンシブした時の改行阻止 */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: cl(white);
+      font-size: 35px;
+      text-align: center;
+      @include overTab {
+        font-size: 50px;
+      }
+    }
+  }
+}

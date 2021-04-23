@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+// ハンバーガーライン
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  transition: all .6s;
+  box-sizing: border-box;
+  z-index: 99; 
+  display: block;
+  @include overTab {
+    display: none;/* jQueryで調整 */
+  } 
+
+}
+.menu-trigger {
+  position: relative;
+  width: 50px;
+  height: 44px;
+  background: none;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+}
+.menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+.menu-trigger span:nth-of-type(2) {
+  top: 20px;
+}
+.menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+.menu-trigger.active {
+  transform: rotate(90deg);
+}
+
+
+
+// ハンバーガーメニュー
+.gloval-nav {
+  position: fixed;
+  top: 94px;/* 高さはheaderの高さごとに調整 */
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  visibility: hidden;/* jQueryで見える様に調整 */
+  transition: .6s all ease;
+  opacity: .6;
+  background: #000000CC;
+
+
+
+  .gloval-list {
+    opacity: 0;
+    width: 100%;
+    height: 360px;/* heightはサイト毎に調整 */
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    transition: .6s all ease;
+
+
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+
+    .gloval-item {
+      >a {
+        color: #fff;
+        font-size: 30px;
+        z-index: 3;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
